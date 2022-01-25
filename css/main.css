@@ -1,0 +1,134 @@
+/* Основные переменные css */
+:root {
+  --primary-title-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-background-color: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  background-color: var(--main-background-color, #ffffff);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Оформление логотипа */
+.header-logo,
+.footer-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.92;
+  color: #000000;
+}
+
+.header-logospan,
+.footer-logospan {
+  color: #2196f3;
+}
+.footer-logo {
+  color: #ffffff;
+}
+
+/* Оформление хедера */
+.header-navlink {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header_contactlink {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.link {
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Оформление героя */
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+.hero-h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: inherit;
+}
+
+.hero-btn {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* Оформление особенности */ /* Оформление Чем мы занимаемся */
+.ourproperties-h2,
+.ourwork-h2,
+.ourteam-h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.ourproperties-h3,
+.ourwork-h3,
+.ourteam-h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.ourproperties-item p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.ourteam-h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: none;
+}
+
+.ourteam-item p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Оформление Footer */
+.footer {
+  background-color: #2f303a;
+}
