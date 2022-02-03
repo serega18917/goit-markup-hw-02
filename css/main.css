@@ -8,19 +8,52 @@
 }
 
 body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--main-background-color, #ffffff);
+
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-
-  background-color: var(--main-background-color, #ffffff);
 }
 
 a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style: none;
+}
+
+/* Оформление контейнера для хедера */
+.header {
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 1px solid #ececec;
+
+  height: 80px;
+  width: 1600px;
+
+  display: flex;
+  align-items: stretch;
+}
+
+/* Разделение хедера пополам*/
+.headerleft,
+.headerright {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: stretch;
+  width: 50%;
+
+  background-color: turquoise;
+}
+
+/* Полоса в середине хедера */
+.headerleft {
+  border-right: 1px solid tomato;
 }
 
 /* Оформление логотипа */
@@ -29,18 +62,31 @@ li {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.92;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #000000;
+  align-self: center;
+  margin-left: 215px;
 }
 
 .header-logospan,
 .footer-logospan {
   color: #2196f3;
 }
-.footer-logo {
-  color: #ffffff;
+
+/* Оформление навигации в хедере */
+
+.header-nav {
+  width: 100%;
 }
 
-/* Оформление хедера */
+.header-navlist,
+.header-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
 .header-navlink {
   font-size: 14px;
   line-height: 1.14;
@@ -63,11 +109,12 @@ li {
 .link:focus {
   color: var(--accent-color);
 }
-
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Оформление героя */
 .hero {
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
   text-align: center;
+  outline: green 1px solid;
 }
 .hero-h1 {
   color: #ffffff;
@@ -131,4 +178,8 @@ li {
 /* Оформление Footer */
 .footer {
   background-color: #2f303a;
+}
+
+.footer-logo {
+  color: #ffffff;
 }

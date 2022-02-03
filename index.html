@@ -10,31 +10,39 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Студия.</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
+      <div class="headerleft">
         <p class="header-logo"><span class="header-logospan">Web</span>Studio</p>
-        <ul class="header-navlist">
-          <li><a class="header-navlink link" href="">Студия</a></li>
+        <nav class="header-nav">
+          <ul class="header-navlist">
+            <li><a class="header-navlink link" href="">Студия</a></li>
+            <li>
+              <a class="header-navlink link" href="">Портфолио</a>
+            </li>
+            <li><a class="header-navlink link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="headerright">
+        <ul class="header-list">
           <li>
-            <a class="header-navlink link" href="">Портфолио</a>
+            <a class="header_contactlink link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a class="header-navlink link" href="">Контакты</a></li>
+          <li>
+            <a class="header_contactlink link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-list">
-        <li>
-          <a class="header_contactlink link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="header_contactlink link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
-    <main>
+
+    <!-- <main>
       <section class="hero">
         <h1 class="hero-h1">Эффективные решения<br />для вашего бизнеса</h1>
         <button class="hero-btn" type="button">Заказать услугу</button>
@@ -154,6 +162,10 @@
           <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
       </address>
-    </footer>
+      <progress value="71" max="100">Alex</progress><br />
+      <progress value="16" max="100">Brandon</progress><br />
+      <progress value="40" max="100">Charlotte</progress><br />
+      <progress value="92" max="100">Sam</progress>
+    </footer> -->
   </body>
 </html>
