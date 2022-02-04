@@ -10,13 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Студия.</title>
   </head>
   <body>
     <header class="header">
-      <div class="headerleft">
+      <div class="contaner">
         <p class="header-logo"><span class="header-logospan">Web</span>Studio</p>
         <nav class="header-nav">
           <ul class="header-navlist">
@@ -27,8 +30,7 @@
             <li><a class="header-navlink link" href="">Контакты</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="headerright">
+
         <ul class="header-list">
           <li>
             <a class="header_contactlink link" href="mailto:info@devstudio.com"
@@ -42,12 +44,15 @@
       </div>
     </header>
 
-    <!-- <main>
+    <main>
       <section class="hero">
-        <h1 class="hero-h1">Эффективные решения<br />для вашего бизнеса</h1>
+        <div class="hero-text">
+          <h1 class="hero-h1">Эффективные решения<br />для вашего бизнеса</h1>
+        </div>
+
         <button class="hero-btn" type="button">Заказать услугу</button>
       </section>
-      <section class="ourproperties">
+      <section class="ourproperties contaner">
         <h2 class="ourproperties-h2" hidden>О нас</h2>
         <ul class="ourproperties-list">
           <li class="ourproperties-item">
@@ -166,6 +171,6 @@
       <progress value="16" max="100">Brandon</progress><br />
       <progress value="40" max="100">Charlotte</progress><br />
       <progress value="92" max="100">Sam</progress>
-    </footer> -->
+    </footer>
   </body>
 </html>

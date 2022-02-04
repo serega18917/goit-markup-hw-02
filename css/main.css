@@ -5,6 +5,18 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --main-background-color: #ffffff;
+  --html-whidth: 1600px;
+}
+
+/* Установка свойства border box чтобы корректно задавать ширину блока и не высчитывать падинги */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -15,6 +27,7 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  width: var(--html-whidth);
 }
 
 a {
@@ -33,27 +46,22 @@ ul {
   border-bottom: 1px solid #ececec;
 
   height: 80px;
-  width: 1600px;
+  width: inherit;
 
   display: flex;
   align-items: stretch;
 }
 
-/* Разделение хедера пополам*/
-.headerleft,
-.headerright {
-  margin: 0px;
-  padding: 0px;
+.contaner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border: 1px solid tomato;
+
   display: flex;
-  align-items: stretch;
-  width: 50%;
-
-  background-color: turquoise;
-}
-
-/* Полоса в середине хедера */
-.headerleft {
-  border-right: 1px solid tomato;
+  flex-basis: 1200px;
 }
 
 /* Оформление логотипа */
@@ -66,7 +74,6 @@ ul {
   margin-bottom: 0px;
   color: #000000;
   align-self: center;
-  margin-left: 215px;
 }
 
 .header-logospan,
@@ -77,7 +84,9 @@ ul {
 /* Оформление навигации в хедере */
 
 .header-nav {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
 }
 
 .header-navlist,
@@ -85,6 +94,11 @@ ul {
   display: flex;
   padding: 0px;
   margin: 0px;
+  align-items: center;
+}
+
+.header-list {
+  margin-left: auto;
 }
 
 .header-navlink {
@@ -93,6 +107,7 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-right: 50px;
 }
 
 .header_contactlink {
@@ -101,6 +116,7 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
+  margin-left: 30px;
 }
 
 .link {
@@ -111,30 +127,68 @@ ul {
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Оформление героя */
+/* position: absolute;
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+
+background: url(new_photo.jpg); */
+
 .hero {
-  /* background-color: #2f303a; */
-  text-align: center;
-  outline: green 1px solid;
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 80px;
+
+  background-image: url(../images/HeroImg.png),
+    linear-gradient(
+      40deg,
+      rgba(196, 196, 196, 0.4) 0%,
+      rgba(196, 196, 196, 0.4) 35%,
+      rgba(196, 196, 196, 0.4) 75%,
+      rgba(196, 196, 196, 0.4) 100%
+    );
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
+
+.hero-text {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-h1 {
   color: #ffffff;
-  text-align: center;
+  margin: 0px;
   font-weight: 900;
+
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: inherit;
+  text-align: center;
 }
 
 .hero-btn {
   color: #ffffff;
   background-color: var(--accent-color);
+
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 200px;
 }
 
 /* Оформление особенности */ /* Оформление Чем мы занимаемся */
